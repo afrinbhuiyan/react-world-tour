@@ -23,9 +23,11 @@ const Country = ({country, handleVisitedCountry, handleVisitedFlags}) => {
             <p>Code : {cca3} </p>
             <button onClick={() => handleVisitedCountry(country)}
             style={{backgroundColor:"lightcoral", color:'white', marginBottom:"20px"}} >Mark Visited</button><br />
-            <button onClick={() => handleVisitedFlags(country.flags.png)} >add flags</button>
+            <button style={{backgroundColor:"lightcoral", color:'white', marginBottom:"20px"}}
+            onClick={() => handleVisitedFlags(country.flags.png)} >add flags</button>
             <br />
-            <button onClick={handleVisited} > {visited ? "Visited" : "Going"}</button>
+            <button style={{backgroundColor:"lightcoral", color:'white', marginBottom:"20px"}} 
+            onClick={handleVisited} > {visited ? "Visited" : "Going"}</button>
             {visited ? "I have visited this country." : "I want to visit"}
             <hr />
             <CountryDetail

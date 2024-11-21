@@ -1,5 +1,6 @@
 
 const CountryData = ({country, handleVisitedCountry, handleVisitedFlags}) => {
+    console.log(country, handleVisitedCountry, handleVisitedFlags)
     return (
         <div>
             {/* <h5>Country Data</h5> */}
